@@ -15,7 +15,7 @@ client = TelegramClient('user_session', api_id, api_hash)
 bot = TelegramClient('bot_session', api_id, api_hash).start(bot_token=bot_token)
 
 # Initialize MongoDB client
-mongo_client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://forwd:forwdo@cluster0.nkmhi9a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongo_client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://bot:bot@cluster0.8vepzds.mongodb.net/?retryWrites=true&w=majority')
 db = mongo_client['telegram_bot']
 collection = db['schedules']
 
